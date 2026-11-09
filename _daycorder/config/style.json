@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "canvas": { "width": 1920, "height": 1080 },
+  "border": { "width": 25, "color": "#666666" },
+  "background": { "color": "transparent" },
+  "text": {
+    "color": "#ffffff",
+    "font_family": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace",
+    "font_size": 18
+  },
+  "regions": { "gap": 18 }
+}

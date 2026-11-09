@@ -1,0 +1,74 @@
+:root {
+  --canvas-width: 1920px;
+  --canvas-height: 1080px;
+  --border-width: 25px;
+  --border-color: #666666;
+  --background-color: transparent;
+  --text-color: #ffffff;
+  --font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-size: 20px;
+  --region-gap: 18px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: transparent; }
+[hidden] { display: none !important; }
+body { font-family: var(--font-family); color: var(--text-color); }
+
+#surface {
+  position: relative;
+  width: var(--canvas-width);
+  height: var(--canvas-height);
+  background: var(--background-color);
+  border: var(--border-width) solid var(--border-color);
+}
+
+#focus {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.telemetry-region {
+  position: absolute;
+  display: flex;
+  gap: var(--region-gap);
+  align-items: center;
+  font-size: var(--font-size);
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+#header {
+  top: calc(-1 * var(--border-width));
+  left: 0;
+  right: 0;
+  height: var(--border-width);
+  padding: 0 8px;
+  justify-content: space-between;
+}
+
+#footer {
+  bottom: calc(-1 * var(--border-width));
+  left: 0;
+  right: 0;
+  height: var(--border-width);
+  padding: 0 8px;
+  justify-content: space-between;
+}
+
+#lhc, #rhc {
+  top: 0;
+  bottom: 0;
+  width: var(--border-width);
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 0;
+  /* Reserved for a later pass; v0 keeps both disabled in config/index.json. */
+}
+#lhc { left: calc(-1 * var(--border-width)); }
+#rhc { right: calc(-1 * var(--border-width)); }
+
+.telemetry-item { opacity: 0.92; }
+.telemetry-label { opacity: 0.60; margin-right: 0.35em; }

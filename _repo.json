@@ -1,0 +1,15 @@
+{
+  "github": {
+    "name": "TWAVIWP_0009_wilderblairmunroakusa_01a1c12a-996d-7876-b179-75087fc55e43",
+    "description": "Daycorder entry TWAVIWP_0009_wilderblairmunroakusa_01a1c12a-996d-7876-b179-75087fc55e43",
+    "private": false,
+    "homepage": "https://www.patreon.com/cw/WilderBlairMunroAKUSA",
+    "has_issues": true,
+    "owner": "WilderBlairMunroAKUSA"
+  },
+  "huggingface": {
+    "name": "TWAVIWP_0009_wilderblairmunroakusa_01a1c12a-996d-7876-b179-75087fc55e43",
+    "namespace": "WilderBlairMunroAKUSA",
+    "type": "dataset"
+  }
+}

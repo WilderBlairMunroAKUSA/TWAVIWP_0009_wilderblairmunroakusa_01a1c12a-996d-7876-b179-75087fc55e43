@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+HERE=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)
+sub=${1:-}
+
+# Local subcommands map to auditable *.sh files in git.d/.
+[[ $sub =~ ^[a-z][a-z0-9_]*$ ]] || {
+  printf 'Usage: %s <subcommand> [args]\n' "$0" >&2
+  exit 2
+}
+script="$HERE/git.d/$sub.sh"
+[[ -f $script && -x $script ]] || {
+  printf 'Unknown subcommand: %s\n' "$sub" >&2
+  exit 2
+}
+shift
+exec "$script" "$@"

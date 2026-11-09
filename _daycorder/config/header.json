@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "items": [
+    { "label": "☮ VIBE-INVENTING WORLD PEACE", "variable": "day_id" },
+    { "label": "TIME MACHINE FOR PEACE SOCIAL INVENTION PROGRAM", "variable": "program_id" }
+  ]
+}

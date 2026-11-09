@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "tick_hz": 1,
+  "variables": {
+    "program_id": { "type": "literal", "value": "[THE WILDER-NESS ADVENTURES]" },
+    "day_id": { "type": "literal", "value": "[DAY 0006/???? 01a1b2cc-2631-78b3-85fa-7e04c7f8129f]" },
+    "mode": { "type": "literal", "value": "WORKBENCH" },
+    "local_time": {
+      "type": "clock",
+      "options": {
+        "year": "numeric",
+        "month": "2-digit",
+        "day": "2-digit",
+        "hour": "2-digit",
+        "minute": "2-digit",
+        "second": "2-digit",
+        "hour12": false,
+        "timeZoneName": "short"
+      }
+    },
+    "elapsed": { "type": "elapsed" }
+  }
+}
